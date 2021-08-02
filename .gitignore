@@ -3,3 +3,4 @@ node_modules/
 tunnel.py
 package-lock.json
 sample.json
+firebase-secret.json
