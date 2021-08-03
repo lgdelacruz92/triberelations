@@ -12,15 +12,6 @@ const session = {};
 const FAILED_TO_LOGIN = 3;
 const UNAUTHENTICATED = 4;
 
-console.log(firebase);
-const db = firebase.firebase.firestore();
-const docRef = db.collection('users').doc('12341').set({
-    first: 'Ada',
-    last: 'Lovelace',
-    born: 1815,
-});
-console.log(docRef);
-
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
