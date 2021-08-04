@@ -1,3 +1,5 @@
+const { inquiries } = require('./inquiries.resolver');
+
 const resolvers = {
     Query: {
         async hello(_, { name }) {
@@ -5,7 +7,7 @@ const resolvers = {
         },
 
         async inquiries() {
-            return [{ from: '1231', message: 'hely', to: '12341' }];
+            return inquiries();
         },
     },
 };
