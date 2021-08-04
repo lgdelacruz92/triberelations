@@ -3,6 +3,10 @@ const resolvers = {
         async hello(_, { name }) {
             return `Hello ${name || 'World'}`;
         },
+
+        async inquiries() {
+            return [{ from: '1231', message: 'hely', to: '12341' }];
+        },
     },
 };
 

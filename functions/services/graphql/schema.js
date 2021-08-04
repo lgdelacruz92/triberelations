@@ -1,7 +1,12 @@
+const inquiry = require('./inquiries.schema');
+
 const typeDefs = `
-  type Query {
-    hello(name: String): String!
-  }
+    ${inquiry.inquirySchema}
+  
+    type Query {
+        hello(name: String): String!,
+        inquiries: [Inquiry]!
+    }
 `;
 
 module.exports = typeDefs;
